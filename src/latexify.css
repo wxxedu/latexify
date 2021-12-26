@@ -49,7 +49,7 @@
 
 html, body {
     background-color: #ffffff;
-    font-family: 'CMU Serif Roman';
+    font-family: 'CMU Serif Roman', 'Songti SC';
 }
 
 html {
@@ -106,10 +106,12 @@ html {
 
 #write strong {
     font-weight: bold;
+    font-family: "CMU Serif Roman", "SimHei", "Heiti SC";
 }
 
 #write em {
     font-style: italic;
+    font-family: "CMU Serif Roman", "FangSong", "STFangSong";
 }
 
 #write blockquote {

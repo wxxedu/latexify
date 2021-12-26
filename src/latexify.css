@@ -145,26 +145,26 @@ html {
     }
 
     #write h1 + p {
-        text-align: 0em;
+        text-indent: 0em;
     }
 
     #write h2 + p {
-        text-align: 0em;
+        text-indent: 0em;
     }
 
     #write h3 + p {
-        text-align: 0em;
+        text-indent: 0em;
     }
 
     #write h4 + p {
-        text-align: 0em;
+        text-indent: 0em;
     }
 
     #write h5 + p {
-        text-align: 0em;
+        text-indent: 0em;
     }
 
     #write h6 + p {
-        text-align: 0em;
+        text-indent: 0em;
     }
 }

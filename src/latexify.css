@@ -1,0 +1,168 @@
+:root {
+    --bg-color:  #ffffff; /*change background*/
+    --text-color: #000000; /*change text color*/
+    --md-char-color: #C7C5C5; /*change color of meta characetrs like `*` in markdown */
+    --meta-content-color: #5b808d; /*change color of meta contents like image text or link address in markdown */
+ 
+    --primary-color: #428bca; /* color of primary buttons */
+    --primary-btn-border-color: #285e8e;
+    --primary-btn-text-color: #fff;
+ 
+    --window-border: 1px solid #eee; /*border for sidebar, etc*/
+ 
+    --active-file-bg-color: #eee; /*background color if list item in file tree or file list*/
+    --active-file-text-color: inherit;
+    --active-file-border-color: #777;
+ 
+    --side-bar-bg-color: var(--bg-color); /*change background of sidebar*/
+    --item-hover-bg-color: rgba(229, 229, 229, 0.59); /*background of control items when hover, like menu in sidebar*/
+    --item-hover-text-color: inherit;
+    --monospace: monospace; /*monospace font for codes, fences*/
+}
+
+
+@font-face {
+    font-family: "CMU Serif Roman";
+    font-weight: normal;
+    font-size: 12px;
+    src: url(./latexify/cmunrm.ttf);
+}
+
+@font-face {
+    font-family: "CMU Serif Roman";
+    font-weight: bold;
+    src: url(./latexify/cmunbx.ttf);
+}
+
+@font-face {
+    font-family: "CMU Serif Roman";
+    font-style: italic;
+    src: url(./latexify/cmunti.ttf);
+}
+
+@font-face {
+    font-family: "CMU Serif Roman";
+    font-style: italic;
+    font-weight: bold;
+    src: url(./latexify/cmunbi.ttf);
+}
+
+html, body {
+    background-color: #ffffff;
+    font-family: 'CMU Serif Roman';
+}
+
+html {
+    font-size: 11pt;
+}
+
+#write {
+    text-align: justify;
+}
+
+#write h1 {
+    font-weight: normal;
+    text-align: center;
+}
+
+#write h1:nth-of-type(1) {
+    margin-top: 50pt;
+    margin-bottom: 40pt;
+    font-size: 20.74pt;
+}
+#write h1:nth-of-type(2) {
+    margin-top: -20pt;
+    margin-bottom: 40pt;
+    font-size: 12pt;
+}
+#write h1:nth-of-type(3) {
+    margin-top: -20pt;
+    margin-bottom: 40pt;
+    font-size: 12pt;
+}
+
+#write h2 {
+    margin-top: 16.5pt;
+    margin-bottom: 10.8pt;
+    font-size: 14.4pt;
+}
+
+#write h3 {
+    margin-top: 15.3pt;
+    margin-bottom: 7.1pt;
+    font-size: 12pt;
+}
+
+#write h4 {
+    margin-top: 15.3pt;
+    margin-bottom: 7.1pt;
+    font-size: 11pt;
+}
+
+#write strong em, #write em strong {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#write strong {
+    font-weight: bold;
+}
+
+#write em {
+    font-style: italic;
+}
+
+#write blockquote {
+    margin-left: 1in;
+    margin-right: 1in;
+    font-style: italic;
+}
+
+#write li p {
+    text-indent: 0em;
+}
+
+#write .md-fences {
+    border: 1px solid gray;
+    padding: 1em;
+}
+
+#write table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#write table th {
+    border-bottom: 0.5px solid black;
+}
+
+@media print {
+    #write p {
+        text-indent: 2em;
+    }
+
+    #write h1 + p {
+        text-align: 0em;
+    }
+
+    #write h2 + p {
+        text-align: 0em;
+    }
+
+    #write h3 + p {
+        text-align: 0em;
+    }
+
+    #write h4 + p {
+        text-align: 0em;
+    }
+
+    #write h5 + p {
+        text-align: 0em;
+    }
+
+    #write h6 + p {
+        text-align: 0em;
+    }
+}
